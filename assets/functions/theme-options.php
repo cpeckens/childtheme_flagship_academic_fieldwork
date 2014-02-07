@@ -13,6 +13,7 @@ function flagship_sub_options_page_sections() {
 	$sections['select_section'] 	= __('Content Options', 'flagship_sub_textdomain');
 	$sections['footer_section'] 	= __('Footer Options', 'flagship_sub_textdomain');
 	$sections['technical_section'] 	= __('Technical Options', 'flagship_sub_textdomain');
+	$sections['directory_section']  = __('Directory Search Options', 'flagship_sub_textdomain');
 	return $sections;	
 }
 
@@ -61,10 +62,10 @@ function flagship_sub_options_page_fields() {
 		"std"    => "1");
 	$options[4] =
 	array (		
-		"section" => "select_section",
+		"section" => "directory_section",
 		"id"      => FLAGSHIP_SUB_SHORTNAME . "_directory_search",
 		"title"   => __( 'Directory Search', 'flagship_sub_textdomain' ),
-		"desc"    => __( 'Do you want a search box and filter capabilities for your people directory?', 'flagship_sub_textdomain' ),
+		"desc"    => __( 'Do you want a search box for your people directory?', 'flagship_sub_textdomain' ),
 		"type"    => "checkbox",
 		"std"    => "1");	
 	$options[5] =
@@ -128,17 +129,40 @@ function flagship_sub_options_page_fields() {
 		"desc"    => __( 'Enter the department address', 'flagship_sub_textdomain' ),
 		"type"    => "textarea",
 		"std"    => "Zanvyl Krieger School of Arts & Sciences");
-		return $options;
 	$options[12] =
+	array (		
+		"section" => "directory_section",
+		"id"      => FLAGSHIP_SUB_SHORTNAME . "_role_search",
+		"title"   => __( 'Filter by Role', 'flagship_sub_textdomain' ),
+		"desc"    => __( 'Do you want to be able to filter by role (faculty, research staff, emertiti)?', 'flagship_sub_textdomain' ),
+		"type"    => "checkbox",
+		"std"    => "0");		
+	$options[13] =
+	array (		
+		"section" => "directory_section",
+		"id"      => FLAGSHIP_SUB_SHORTNAME . "_research_search",
+		"title"   => __( 'Filter by Expertise', 'flagship_sub_textdomain' ),
+		"desc"    => __( 'Do you want to be able to filter by expertise/research area?', 'flagship_sub_textdomain' ),
+		"type"    => "checkbox",
+		"std"    => "0");	
+	$options[14] =
+	array (		
+		"section" => "homepage_section",
+		"id"      => FLAGSHIP_SUB_SHORTNAME . "_news_query_cond",
+		"title"   => __( 'News Feed Option', 'flagship_sub_textdomain' ),
+		"desc"    => __( 'Do you want to exclude faculty books from your news feeds?', 'flagship_sub_textdomain' ),
+		"type"    => "checkbox",
+		"std"    => "0");		
+	$options[15] =
 	array (		
 		"section" => "select_section",
 		"id"      => FLAGSHIP_SUB_SHORTNAME . "_color_scheme",
 		"title"   => __( 'Color Scheme', 'flagship_sub_textdomain' ),
 		"desc"    => __( 'Choose your theme color scheme', 'flagship_sub_textdomain' ),
-		"type"    => "text",
+		"type"    => "select",
+		"choices" => array('blue','black','yellow','green','purple','red','aqua'),
 		"std"    => "blue");
 		return $options;
 		
 }
-
 ?>

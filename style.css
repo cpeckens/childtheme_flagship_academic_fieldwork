@@ -144,25 +144,7 @@ li.external a::after {
 	display: block;
 	line-height: 1em;
 }
-.program {
-	z-index: 10;
-}
-.program select {
-	margin: 100px 0px 0px 9px;
-	height: 27px;
-	-webkit-appearance: none;
-	border: none;
-	background: none;
-	background: rgba(0,0,0,.1);
-	color: #FFF;
-	font: 18px 'Myriad W01 Regular', Helvetica, Arial, sans-serif;
-	font-family: 'Myriad W01 Regular', Helvetica, Arial, sans-serif;
-	font-size: 18px;
-	text-indent: 15px;
-	padding: 3px 0;
-	white-space: normal;
-	letter-spacing: 2px;
-}
+
 #mobile-header {
 	margin-bottom: 40px;
 }
@@ -170,20 +152,18 @@ li.external a::after {
 	margin: 0;
 }
 #main_nav ul {
-	padding: 0 0 0 240px;
-	margin: -42px 0 0 0;
-	zoom: 1;
+	padding: 0 0 0 10px;
 }
 
 ul.flyout li, .nav-bar li ul li {
 	border-left: none;
 }
 
-/*********SLIDER*************/
-#slider {
-	min-height: 285px;
+#logo_nav {
+    padding-bottom: 12px;
 }
 
+/*********SLIDER*************/
 .orbit-slide {
 	width: 100%;
 }
@@ -199,11 +179,6 @@ ul.flyout li, .nav-bar li ul li {
 	background: rgba(51,51,51, .7)
 }
 /*********HOMEPAGE*************/
-body.site-31 #site_title.grll h1{
-	margin: -10px 0 0 0;
-	line-height: 1em;
-	font-size: 36px;
-}
 .homepage_bg, #program-tab {
 	background: #333;
 	background: rgba(0,0,0,.9)
@@ -268,59 +243,90 @@ h5.archive {
 .textwidget {
 	margin: 0;
 }
+
+
+.post-container {
+    margin-bottom: 25px;    
+}
+
+.post-container img {
+    margin-top: 15px;
+}
+
+.post-container .wp-post-image {
+    margin-bottom: 0;
+}
+
+.post-container:last-of-type {
+    float:left !important;
+    margin-bottom: 25px !important;
+}
+
+.post {
+    background: #f2f2f2;
+    border: 1px solid #ebebeb;
+}
+
+.featured img {
+    margin-left: 20px;
+}
+
+.home .panel.callout {
+    margin-top: 53px;
+}
 /*********COLORS-BG*************/
-body #sidebar_header, body #site_title, body #main_nav ul, body #logo_nav, body .widget_title, #main_nav ul li ul li:hover, #mobile-header {
+body.black #sidebar_header, body.black #site_title, body.black #main_nav ul, body.black #logo_nav, body.black .widget_title, body.black #main_nav ul li ul li:hover, body.black #mobile-header {
 	background: #333;
 }
 
-body.french #sidebar_header, body.french #site_title, body.french #main_nav ul, body.french #logo_nav, body.french .widget_title, .button.french, body.french #main_nav ul li ul li:hover, body.french #mobile-header{
+body.blue #sidebar_header, body.blue #site_title, body.blue #main_nav ul, body.blue #logo_nav, body.blue .widget_title, .button.french, body.blue #main_nav ul li ul li:hover, body.blue #mobile-header{
 	background: #336699;
 }
 
-body.german #sidebar_header, body.german #site_title, body.german #main_nav ul, body.german #logo_nav, body.german .widget_title, .button.german, body.german #main_nav ul li ul li:hover, body.german #mobile-header{
+body.green #sidebar_header, body.green #site_title, body.green #main_nav ul, body.green #logo_nav, body.green .widget_title, .button.german, body.green #main_nav ul li ul li:hover, body.green #mobile-header{
 	background: #006666;
 }
 
-body.hebrew #sidebar_header, body.hebrew #site_title, body.hebrew #main_nav ul, body.hebrew #logo_nav, body.hebrew .widget_title, .button.hebrew, body.hebrew #main_nav ul li ul li:hover, body.hebrew #mobile-header{
+body.red #sidebar_header, body.red #site_title, body.red #main_nav ul, body.red #logo_nav, body.red .widget_title, .button.hebrew, body.red #main_nav ul li ul li:hover, body.red #mobile-header{
 	background: #6a2011;
 }
 
-body.italian #sidebar_header, body.italian #site_title, body.italian #main_nav ul, body.italian #logo_nav, body.italian .widget_title, .button.italian, body.italian #main_nav ul li ul li:hover, body.italian #mobile-header {
+body.yellow #sidebar_header, body.yellow #site_title, body.yellow #main_nav ul, body.yellow #logo_nav, body.yellow .widget_title, .button.italian, body.yellow #main_nav ul li ul li:hover, body.yellow #mobile-header {
 	background: #ba920a;
 }
 
-body.portuguese #sidebar_header, body.portuguese #site_title, body.portuguese #main_nav ul, body.portuguese #logo_nav, body.portuguese .widget_title, .button.portuguese, body.portuguese #main_nav ul li ul li:hover, body.portuguese #mobile-header {
+body.aqua #sidebar_header, body.aqua #site_title, body.aqua #main_nav ul, body.aqua #logo_nav, body.aqua .widget_title, .button.portuguese, body.aqua #main_nav ul li ul li:hover, body.aqua #mobile-header {
 	background: #339999;
 }
 
-body.spanish #sidebar_header, body.spanish #site_title, body.spanish #main_nav ul, body.spanish #logo_nav, body.spanish .widget_title, .button.spanish, body.spanish #main_nav ul li ul li:hover, body.spanish #mobile-header {
+body.purple #sidebar_header, body.purple #site_title, body.purple #main_nav ul, body.purple #logo_nav, body.purple .widget_title, .button.spanish, body.purple #main_nav ul li ul li:hover, body.purple #mobile-header {
 	background: #333366;
 }
 /*********COLORS-FONTS*************/
 body h1, body h2, body h3, body h4, body h5, body h6, body .semibold, body table thead tr th, body table tfoot tr td, body .sidebar_bg ul.nav li a, body #sidebar li a {
 	color: #333;
 }
-body.french h1, body.french h2, body.french h3, body.french h4, body.french h5, body.french h6, body.french .semibold, body.french table thead tr th, body.french table tfoot tr td, body.french a, body.french .sidebar_bg ul.nav li a, body.french #sidebar li a {
+body.blue h1, body.blue h2, body.blue h3, body.blue h4, body.blue h5, body.blue h6, body.blue .semibold, body.blue table thead tr th, body.blue table tfoot tr td, body.blue a, body.blue .sidebar_bg ul.nav li a, body.blue #sidebar li a {
 	color: #336699;
 }
 
-body.german h1, body.german h2, body.german h3, body.german h4, body.german h5, body.german h6, body.german .semibold, body.german table thead tr th, body.german table tfoot tr td, body.german a, body.german .sidebar_bg ul.nav li a, body.german #sidebar li a {
+body.green h1, body.green h2, body.green h3, body.green h4, body.green h5, body.green h6, body.green .semibold, body.green table thead tr th, body.green table tfoot tr td, body.green a, body.green .sidebar_bg ul.nav li a, body.green #sidebar li a {
 	color: #006666;
 }
 
-body.hebrew h1, body.hebrew h2, body.hebrew h3, body.hebrew h4, body.hebrew h5, body.hebrew h6, body.hebrew .semibold, body.hebrew table thead tr th, body.hebrew table tfoot tr td, body.hebrew a, body.hebrew .sidebar_bg ul.nav li a, body.hebrew #sidebar li a {
+body.red h1, body.red h2, body.red h3, body.red h4, body.red h5, body.red h6, body.red .semibold, body.red table thead tr th, body.red table tfoot tr td, body.red a, body.red .sidebar_bg ul.nav li a, body.red #sidebar li a {
 	color: #6a2011;
 }
 
-body.italian h1, body.italian h2, body.italian h3, body.italian h4, body.italian h5, body.italian h6, body.italian .semibold, body.italian table thead tr th, body.italian table tfoot tr td, body.italian a, body.italian .sidebar_bg ul.nav li a, body.italian #sidebar li a {
+body.yellow h1, body.yellow h2, body.yellow h3, body.yellow h4, body.yellow h5, body.yellow h6, body.yellow .semibold, body.yellow table thead tr th, body.yellow table tfoot tr td, body.yellow a, body.yellow .sidebar_bg ul.nav li a, body.yellow #sidebar li a {
 	color: #ba920a;
 }
 
-body.portuguese h1, body.portuguese h2, body.portuguese h3, body.portuguese h4, body.portuguese h5, body.portuguese h6, body.portuguese .semibold, body.portuguese table thead tr th, body.portuguese table tfoot tr td, body.portuguese a, body.portuguese .sidebar_bg ul.nav li a, body.portuguese #sidebar li a {
+body.aqua h1, body.aqua h2, body.aqua h3, body.aqua h4, body.aqua h5, body.aqua h6, body.aqua .semibold, body.aqua table thead tr th, body.aqua table tfoot tr td, body.aqua a, body.aqua .sidebar_bg ul.nav li a, body.aqua #sidebar li a {
 	color: #339999;
 }
 
-body.spanish h1, body.spanish h2, body.spanish h3, body.spanish h4, body.spanish h5, body.spanish h6, body.spanish .semibold, body.spanish table thead tr th, body.spanish table tfoot tr td, body.spanish a, body.spanish .sidebar_bg ul.nav li a, body.spanish #sidebar li a {
+body.purple h1, body.purple h2, body.purple h3, body.purple h4, body.purple h5, body.purple h6, body.purple .semibold, body.purple table thead tr th, body.purple table tfoot tr td, body.purple a, body.purple .sidebar_bg ul.nav li a, body.purple #sidebar li a {
 	color: #333366;
 }
 
@@ -329,29 +335,53 @@ body.spanish h1, body.spanish h2, body.spanish h3, body.spanish h4, body.spanish
 	background: #000;
 }
 
-body.french #main_nav ul li:hover, body.french #main_nav li.active, body.french #main_nav li.current_page_parent, body.french #main_nav li.current_page_ancestor, body.french #main_nav ul li.current_page_item, body.french #main_nav ul li:hover ul, body.french #main_nav ul li a:hover ul, body.french #main_nav ul li.current_page_ancestor ul, body.french #main_nav ul li.current_page_item ul, body.french #main_nav ul .flyout, body.french ul.flyout li a  {
+body.blue #main_nav ul li:hover, body.blue #main_nav li.active, body.blue #main_nav li.current_page_parent, body.blue #main_nav li.current_page_ancestor, body.blue #main_nav ul li.current_page_item, body.blue #main_nav ul li:hover ul, body.blue #main_nav ul li a:hover ul, body.blue #main_nav ul li.current_page_ancestor ul, body.blue #main_nav ul li.current_page_item ul, body.blue #main_nav ul .flyout, body.blue ul.flyout li a  {
 	background: #224466;
 }
 
-body.german #main_nav ul li:hover, body.german #main_nav li.active, body.german #main_nav li.current_page_parent, body.german #main_nav li.current_page_ancestor, body.german #main_nav ul li.current_page_item, body.german #main_nav ul li:hover ul, body.german #main_nav ul li a:hover ul, body.german #main_nav ul li.current_page_ancestor ul, body.german #main_nav ul li.current_page_item ul, body.german #main_nav ul .flyout, body.german ul.flyout li a {
+body.green #main_nav ul li:hover, body.green #main_nav li.active, body.green #main_nav li.current_page_parent, body.green #main_nav li.current_page_ancestor, body.green #main_nav ul li.current_page_item, body.green #main_nav ul li:hover ul, body.green #main_nav ul li a:hover ul, body.green #main_nav ul li.current_page_ancestor ul, body.green #main_nav ul li.current_page_item ul, body.green #main_nav ul .flyout, body.green ul.flyout li a {
 	background: #003333;
 }
 
-body.hebrew #main_nav ul li:hover, body.hebrew #main_nav li.active, body.hebrew #main_nav li.current_page_parent, body.hebrew #main_nav li.current_page_ancestor, body.hebrew #main_nav ul li.current_page_item, body.hebrew #main_nav ul li:hover ul, body.hebrew #main_nav ul li a:hover ul, body.hebrew #main_nav ul li.current_page_ancestor ul, body.hebrew #main_nav ul li.current_page_item ul, body.hebrew #main_nav ul .flyout, body.hebrew ul.flyout li a {
+body.red #main_nav ul li:hover, body.red #main_nav li.active, body.red #main_nav li.current_page_parent, body.red #main_nav li.current_page_ancestor, body.red #main_nav ul li.current_page_item, body.red #main_nav ul li:hover ul, body.red #main_nav ul li a:hover ul, body.red #main_nav ul li.current_page_ancestor ul, body.red #main_nav ul li.current_page_item ul, body.red #main_nav ul .flyout, body.red ul.flyout li a {
 	background: #381109;
 }
 
-body.italian #main_nav ul li:hover, body.italian #main_nav li.active, body.italian #main_nav li.current_page_parent, body.italian #main_nav li.current_page_ancestor, body.italian #main_nav ul li.current_page_item, body.italian #main_nav ul li:hover ul, body.italian #main_nav ul li a:hover ul, body.italian #main_nav ul li.current_page_ancestor ul, body.italian #main_nav ul li.current_page_item ul, body.italian #main_nav ul .flyout, body.italian ul.flyout li a {
+body.yellow #main_nav ul li:hover, body.yellow #main_nav li.active, body.yellow #main_nav li.current_page_parent, body.yellow #main_nav li.current_page_ancestor, body.yellow #main_nav ul li.current_page_item, body.yellow #main_nav ul li:hover ul, body.yellow #main_nav ul li a:hover ul, body.yellow #main_nav ul li.current_page_ancestor ul, body.yellow #main_nav ul li.current_page_item ul, body.yellow #main_nav ul .flyout, body.yellow ul.flyout li a {
 	background: #876907;
 }
 
-body.portuguese #main_nav ul li:hover, body.portuguese #main_nav li.active, body.portuguese #main_nav li.current_page_parent, body.portuguese #main_nav li.current_page_ancestor, body.portuguese #main_nav ul li.current_page_item, body.portuguese #main_nav ul li:hover ul, body.portuguese #main_nav ul li a:hover ul, body.portuguese #main_nav ul li.current_page_ancestor ul, body.portuguese #main_nav ul li.current_page_item ul, body.portuguese #main_nav ul .flyout, body.portuguese ul.flyout li a {
+body.aqua #main_nav ul li:hover, body.aqua #main_nav li.active, body.aqua #main_nav li.current_page_parent, body.aqua #main_nav li.current_page_ancestor, body.aqua #main_nav ul li.current_page_item, body.aqua #main_nav ul li:hover ul, body.aqua #main_nav ul li a:hover ul, body.aqua #main_nav ul li.current_page_ancestor ul, body.aqua #main_nav ul li.current_page_item ul, body.aqua #main_nav ul .flyout, body.aqua ul.flyout li a {
 	background: #226666;
 }
 
-body.spanish #main_nav ul li:hover, body.spanish #main_nav li.active, body.spanish #main_nav li.current_page_parent, body.spanish #main_nav li.current_page_ancestor, body.spanish #main_nav ul li.current_page_item, body.spanish #main_nav ul li:hover ul, body.spanish #main_nav ul li a:hover ul, body.spanish #main_nav ul li.current_page_ancestor ul, body.spanish #main_nav ul li.current_page_item ul, body.spanish #main_nav ul .flyout, body.spanish ul.flyout li a {
+body.purple #main_nav ul li:hover, body.purple #main_nav li.active, body.purple #main_nav li.current_page_parent, body.purple #main_nav li.current_page_ancestor, body.purple #main_nav ul li.current_page_item, body.purple #main_nav ul li:hover ul, body.purple #main_nav ul li a:hover ul, body.purple #main_nav ul li.current_page_ancestor ul, body.purple #main_nav ul li.current_page_item ul, body.purple #main_nav ul .flyout, body.purple ul.flyout li a {
 	background: #1a1a33;
 }
+
+/*********BORDERS & PANELS*************/
+body .callout.panel {
+    background: #c1c1c1;
+}
+body.blue .callout.panel {
+    background: #c1d1e0;
+}
+body.green .callout.panel {
+    background: #b2d1d1;
+}
+body.red .callout.panel {
+    background: #d2bcb7;
+}
+body.yellow .callout.panel {
+    background: #faeab6;
+}
+body.aqua .callout.panel {
+    background: #c1e0e0;
+}
+body.purple .callout.panel {
+    background: #c1c1d1;
+}
+
 
 /*********COLORS-SLIDER*************/
 .slide summary {
@@ -388,33 +418,3 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2fcfcfc', e
 #main_nav ul li.current_page_item {background: none !important;}
 
 #menu-footer-links a { color: #FFF !important;}
-
-body.site-31 {
-	background-image: url('assets/images/bg_grll_main.jpg');
-}
-body.site-31.home {
-	background-image: url('assets/images/bg_grll_home.jpg');
-}
-body.site-31.french {
-	background-image: url('assets/images/bg_french.jpg');
-}
-
-body.site-31.german {
-	background-image: url('assets/images/bg_german.jpg');
-}
-
-body.site-31.hebrew {
-	background-image: url('assets/images/bg_hebrew.jpg');
-}
-
-body.site-31.italian {
-	background-image: url('assets/images/bg_italian.jpg');
-}
-
-body.site-31.portuguese {
-	background-image: url('assets/images/bg_portuguese.jpg');
-}
-
-body.site-31.spanish {
-	background-image: url('assets/images/bg_spanish.jpg');
-}

@@ -8,7 +8,8 @@
   <title><?php create_page_title(); ?></title>
   <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.ico" />
   <!-- CSS Files: All pages -->
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/stylesheets/production.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/stylesheets/min.foundation.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/stylesheets/flagship.css">
   <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
   <!-- CSS Files: Conditionals -->
   
@@ -24,8 +25,59 @@
   <![endif]-->
   <?php include_once("parts-analytics.php"); ?>
 </head>
-<?php $program_slug = get_the_program_slug($post); global $blog_id; $site_id = 'site-' . $blog_id; ?>
-<body <?php body_class($program_slug . ' ' . $site_id); ?>>
-	<?php if(!empty($program_slug)) { get_template_part('parts', 'header-sub'); } else { get_template_part('parts', 'header-main'); } ?>
+<?php $theme_option = flagship_sub_get_global_options(); $color_scheme = $theme_option['flagship_sub_color_scheme']; global $blog_id; $site_id = 'site-' . $blog_id; ?>
+<body <?php body_class($color_scheme . ' ' . $site_id); ?>>	
+	<header>
+		<div class="row show-for-small">
+			<div class="four columns centered blue_bg">
+			<div class="mobile-logo centered"><a href="<?php echo network_site_url(); ?>">Home</a></div>
+			<h2 class="white" align="center"><?php echo get_bloginfo( 'title' ); ?></h2>
+			</div>
+		</div>
 	
-	
+		<div class="row hide-for-print">
+			<div id="search-bar" class="offset-by-seven five mobile-four columns">
+				<div class="row">
+					<div class="six columns mobile-two">
+					<?php $theme_option = flagship_sub_get_global_options(); 
+							$collection_name = $theme_option['flagship_sub_search_collection'];
+					?>
+
+					<form method="GET" action="<?php echo site_url('/search'); ?>">
+						<input type="submit" class="icon-search" value="&#xe004;" />
+						<input type="text" name="q" placeholder="Search this site" />
+						<input type="hidden" name="site" value="<?php echo $collection_name; ?>" />
+					</form>
+					</div>
+						<?php wp_nav_menu( array( 
+							'theme_location' => 'search_bar', 
+							'menu_class' => '', 
+							'fallback_cb' => 'foundation_page_menu', 
+							'container' => 'div',
+							'container_id' => 'search_links', 
+							'container_class' => 'six columns mobile-two hide-for-mobile links inline hide-for-small',
+							'depth' => 1,
+							'items_wrap' => '%3$s', )); ?> 
+				</div>	
+			</div>	<!-- End #search-bar	 -->
+		</div>
+		<div class="row">
+			<div class="twelve columns hide-for-small" id="logo_nav">
+				<li class="logo"><a href="<?php echo network_home_url(); ?>" title="Krieger School of Arts & Sciences">Krieger School of Arts & Sciences</a></li>
+				
+				<a href="<?php echo site_url(); ?>"><h1 class="white"><span class="small"><?php echo get_bloginfo ( 'description' ); ?></span>					<?php echo get_bloginfo( 'title' ); ?></h1></a>
+			
+			</div>
+		</div>
+		<div class="row hide-for-print">
+			<?php wp_nav_menu( array( 
+				'theme_location' => 'main_nav', 
+				'menu_class' => 'nav-bar', 
+				'container' => 'nav',
+				'container_id' => 'main_nav', 
+				'container_class' => 'twelve columns',
+				'fallback_cb' => 'foundation_page_menu',
+				'walker' => new foundation_navigation(),
+				'depth' => 2  )); ?> 
+		</div>
+		</header>
