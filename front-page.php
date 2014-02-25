@@ -19,6 +19,7 @@
 		} 	
 
 ?>
+<?php if( get_header_image() != '' ) { ?>
 <div class="row hide-for-mobile">
     <div id="slider" class="twelve columns radius10 no-gutter">
         <div class="slide">
@@ -26,6 +27,7 @@
         </div>
     </div>
 </div>
+<?php } ?>
 <div class="row wrapper radius10" id="page" role="main">
 	<div class="twelve columns">
 	    <div class="row">
